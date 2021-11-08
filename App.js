@@ -9,7 +9,7 @@ const App = () => {
 const StylingReactNativeComponent = () => {
   return (
     <View>
-      <Text style={styles.textPrimary}>Styling Component</Text>
+      <Text style={styles.textHeader}>Styling Component</Text>
       <View style={styles.container}>
         <Image source={macbook} style={styles.image} />
         <Text style={styles.textPrimary}>New Macbook Pro 2021</Text>
@@ -29,6 +29,13 @@ const styles = StyleSheet.create({
     backgroundColor: '#f2f2f2',
     width: 212,
     borderRadius: 8,
+  },
+  textHeader: {
+    fontSize: 14,
+    fontWeight: 'bold',
+    marginTop: 16,
+    marginLeft: 12,
+    marginVertical: 12,
   },
   textPrimary: {
     fontSize: 14,
