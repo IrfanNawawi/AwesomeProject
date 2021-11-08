@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import {Image, Text, TextInput, View} from 'react-native';
 
 const App = () => {
@@ -11,6 +11,8 @@ const App = () => {
       <Text>Zahwa</Text>
       <Avatar />
       <TextInput style={{borderWidth: 1}} />
+      <BoxGreen />
+      <Animal />
     </View>
   );
 };
@@ -27,5 +29,25 @@ const Avatar = () => {
     />
   );
 };
+
+class BoxGreen extends Component {
+  render() {
+    return <Text>Ini component dari class</Text>;
+  }
+}
+
+class Animal extends Component {
+  render() {
+    return (
+      <View>
+        <Image
+          source={{uri: 'https://placeimg.com/100/100/animals'}}
+          style={{width: 100, height: 100, borderRadius: 50}}
+        />
+        <Text>Ini macan</Text>
+      </View>
+    );
+  }
+}
 
 export default App;
