@@ -1,20 +1,31 @@
 import React from 'react';
-import {View, Text, Image, StyleSheet} from 'react-native';
+import {View, Text, Image, StyleSheet, ScrollView} from 'react-native';
 import macbook from './macbook.jpg';
 
 const StylingReactNativeComponent = () => {
   return (
-    <View>
-      <Text style={styles.textHeader}>Styling Component</Text>
-      <View style={styles.container}>
-        <Image source={macbook} style={styles.image} />
-        <Text style={styles.textPrimary}>New Macbook Pro 2021</Text>
-        <Text style={styles.textNominal}>Rp. 25.000.000</Text>
-        <Text style={styles.textLocation}>Jakarta Selatan</Text>
-        <View style={styles.buttonPrimary}>
-          <Text style={styles.textButtonPrimary}>BELI</Text>
+    <View style={{flexDirection: 'row'}}>
+      <ScrollView>
+        <View style={styles.container}>
+          <Image source={macbook} style={styles.image} />
+          <Text style={styles.textPrimary}>New Macbook Pro 2021</Text>
+          <Text style={styles.textNominal}>Rp. 25.000.000</Text>
+          <Text style={styles.textLocation}>Jakarta Selatan</Text>
+          <View style={styles.buttonPrimary}>
+            <Text style={styles.textButtonPrimary}>BELI</Text>
+          </View>
         </View>
-      </View>
+
+        <View style={styles.container}>
+          <Image source={macbook} style={styles.image} />
+          <Text style={styles.textPrimary}>New Macbook Pro 2021</Text>
+          <Text style={styles.textNominal}>Rp. 25.000.000</Text>
+          <Text style={styles.textLocation}>Jakarta Selatan</Text>
+          <View style={styles.buttonPrimary}>
+            <Text style={styles.textButtonPrimary}>BELI</Text>
+          </View>
+        </View>
+      </ScrollView>
     </View>
   );
 };
@@ -25,13 +36,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#f2f2f2',
     width: 212,
     borderRadius: 8,
-  },
-  textHeader: {
-    fontSize: 14,
-    fontWeight: 'bold',
-    marginTop: 16,
-    marginLeft: 12,
-    marginVertical: 12,
   },
   textPrimary: {
     fontSize: 14,

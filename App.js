@@ -1,13 +1,13 @@
 import React from 'react';
 import {View, ScrollView} from 'react-native';
-import SampleComponent from './SampleComponent';
+import FlexBox from './FlexBox';
 import StylingReactNativeComponent from './StylingReactNativeComponent';
 
 const App = () => {
   return (
     <View>
       <ScrollView>
-        <SampleComponent />
+        <FlexBox />
         <StylingReactNativeComponent />
       </ScrollView>
     </View>
